@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm-Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+.banner{
+   background-color: #EEC900;
+   display: grid;
+   grid-template-columns: 15% 20% 20% 20% 20%;
+}
+.blackfriday{
+    width: 260px;
+    height: 90px;
+    position: relative;
+    top: 10px;
+}
+.textbanner{
+    text-align: center;
+    color: black;
+}
+.text50{
+    position: relative;
+    right: 60px;
+   font-size: 70px;
+   text-align: center;
+   color: white;
+}
+.textxemngay{
+   position: relative;
+   right: 90px;
+   top: 10px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid;
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+}
+.menu{
+    background-color: orangered;
+}
+.giohang{
+    text-align: center;
+    border: 1px solid ;
+    border-radius: 5px;
+    width: 100px;
+    text-decoration: none;
+    height: 30px;
+}
+
+  
+  #slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+  
+  .slide-wrapper {
+    width: 4000px;
+    -webkit-animation: slide 15s ease infinite;
+  }
+  
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+  
+  
+@-webkit-keyframes slide {
+    10% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    80% {margin-left: -1456px;}
+  }
+
+
+  .containerss {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .containerss:hover .image {
+    opacity: 0.3;
+  }
+  
+  .containerss:hover .middle {
+    opacity: 1;
+  }
+  
+ /* .text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  } */
+
+.sdt:hover a{
+    color: #EEC900;
+    transition: ease-in 0.60s;
+    -moz-transition: ease-in 0.60s;
+    -webkit-transition: ease-in 0.60s;
+    text-decoration: none;
+    list-style: none;
+}
+.sdt a{
+  color: white;
+}
+
+.dn:hover a{
+  color: yellow;
+}
+.dn a{
+  color: white;
+}
+.tk:hover a{
+  color: yellow;
+  transition: ease-in 0.60s;
+    -moz-transition: ease-in 0.60s;
+    -webkit-transition: ease-in 0.60s;
+    text-decoration: none;
+    list-style: none;
+ }
+.tk a{
+  color: white;
+}
+.GH:hover a{
+  color: greenyellow;
+}
+.GH a{
+  color:white;
+}
+.danhmuc a{
+  color: black;
+  text-decoration: none;
+}
+.row1 a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.menu-big .menu-small{
+  display: none;
+  text-decoration: none;
+  list-style: none;
+}
+.menu-big:hover .menu-small{
+  display: block;
+  position: absolute;
+
+}
+.menu-big{
+  list-style: none;
+}
+.mnsm .small{
+  display: none;
+  position: absolute;
+  top:0px;
+  left: 230px;
+  
+}
+.mnsm:hover .small{
+  display: block;
+}
+
+.containerdm{
+  border: 1px solid gainsboro;
+  width: 800px;
+  height: 415px;
+  font-size: 15px;
+  background-color: white;
+}
+.menu-small li{
+  padding: 10px;
+  background-color: white;
+}
+.submit{
+  background-color: yellow;
+  color: red;
+}
+.email{
+  width: 500px;
+  height: 35px;
+}
+.shop{
+  width: 100px;
+}
+.iconfooter{
+  
+  color: orangered;
+}
+.footer a{
+  text-decoration: none;
+}
+
+
+
+.containerimage {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: auto;
+  border: 2px solid yellow;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 130px;
+  top: auto;
+  left: 0;
+  right: 0;
+  background-color: grey;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.containerimage:hover .overlay {
+  height: 200px;
+}
+
+.text1 {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  
+}
+
+.money{
+  color: red;
+  font-size: 20px;
+}
+.Fsale{
+  color: red;
+}
+.containers{
+  background-color: rgb(245, 238, 238);
+}
+.xem{
+  border: 1px solid orangered ;
+  color: orangered;
+  border-radius: 5px;
+
+}
+.xem2 a{
+  text-decoration: none;
+}
+.dropdown-submenu {
+  position: relative;
+ }
+ 
+ .dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+ }
+
+        
+        </style>
+    <script>
+        $(document).ready(function(){
+           $('.dropdown-submenu a.test').on("click", function(e){
+              $(this).next('ul').toggle();
+              e.stopPropagation();
+              e.preventDefault();
+              });
+           });
+     </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+
+    <link rel="stylesheet" href="css/medtermtest.css">
+</head>
+<body>
+    <div class="containers">
+        <div class="header">
+            <div class="banner">
+                <div></div>
+                <img src="./image/balack friday.jpg" class="blackfriday"/>
+                <div class="textbanner">
+                    <h2 class="text1banner"><b>GIẢM GIÁ THẢ GA</b></h2>
+                    <p class="text2banner">Áp dụng từ ngày: 22/11-12/12</p>
+                </div>
+                <div><h1 class="text50"><b>50%</b></h1></div>
+                <a href="#" style="text-decoration:none ;"><h3 class="textxemngay"> XEM NGAY</h3></a>
+    
+            </div>
+            <div class="menu">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2" style="padding: 10px;"><img src="./image/logo.webp" alt=""></div>
+                    <div class="col-sm-3" style="position:relative;top:20px;">
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit" style="background-color: yellow ;"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="col-sm-3" style="margin:15px ;">
+                            <div class="row">
+                                <div class="col-sm-2"><img src="./image/phone-call.webp" alt=""></div>
+                                <div class="col-sm-10" style="color: white;">Hỗ trợ khách hàng</div>
+                                <div class="sdt">
+                                    <a href="" title="19006750" style="text-decoration: none; margin: 15px;">19006750</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-3" style="margin:15px ;">
+                            <div class="row">
+                                <div class="col-sm-2"><img src="./image/login.png" style="width:25px"></div>
+                                <div class="col-sm-8 tk"><a href="" title="Tài khoản" style="text-decoration: none ;">Tài khoản</a></div>
+                                <div class="dn"><a href="" title="Đăng nhập" style="text-decoration: none;margin:15px;">Đăng nhập</a></div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 GH" style="margin: 15px;">
+                            <a href="" style="text-decoration:none ;"><div class="giohang"><i class="fas fa-baby-carriage"></i> Giỏ hàng</div></a>
+                          
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+
+
+            </div>
+            
+        </div>
+        <div class="body">
+            <div class="container">
+                <div class="row row1" >
+                    <div class="col-sm-3">
+                        <li class="menu-big"style="margin: 10px;"><a href=""><i class="fa fa-align-justify"></i> Danh sách sản phẩm</a>
+                             <ul class="menu-small">
+                                <li class="mnsm"><a href="#" ><i class="glyphicon glyphicon-phone"></i>Điện thoại, máy tính bảng </a>
+                                    <ul class="small">
+                                        <div class="container containerdm">
+                                            <div class="row danhmuc">
+                                                <div class="col-sm-4">
+                                                    <a href="#"><b>Nổi bật</b> <i class="fas fa-burn" style="color: red;"></i></a><br>
+                                                    <a href="#">Samsung Galaxy A5</a> <br>
+                                                    <a href="#">Samsung Galaxy A11</a><br>
+                                                    <a href="#">Iphone 11 Pro Max 64GB</a><br>
+                                                    <a href="#">Iphone SE 128GB</a>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <a href="#"><b>Xu hướng</b></a> <br>
+                                                    <a href="#">Oppo A12</a><br>
+                                                    <a href="#">Oppo A31</a> <br>
+                                                    <a href="#">Oppo Reno 3</a><br>
+                                                    <a href="#">Vivo Y5</a><br>
+                                                    <a href="#">Vivo Y12</a><br>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <a href=""><b> Máy tính bảng</b></a><br>
+                                                    <a href="">Ipad Ari 64B</a><br>
+                                                    <a href="">Samsung Galaxy Tab 4</a><br>
+                                                    <a href="">Apple Ipad mini</a>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row danhmuc" >
+                                                <div class="col-sm-4">
+                                                    <a href="#"><b>Phụ kiện điện thoại</b></a><br>
+                                                    <a href="#">Oppo A12</a><br>
+                                                    <a href="#">Oppo A31</a> <br>
+                                                    <a href="#">Oppo Reno 3</a><br>
+                                                    <a href="#">Vivo Y5</a><br>
+                                                    <a href="#">Vivo Y12</a><br>
+                                                </div>
+    
+                                                <div class="col-sm-4">
+                                                    <a href="#"><b>Dịch vụ chính sách</b></a><br>
+                                                    <a href="#">Chính sách bảo hành</a><br>
+                                                    <a href="#">Hướng dẫn trả góp</a> <br>
+                                                    <a href="#">Qúa trình vận chuyển</a><br>
+                                                    <a href="#">Chính sách đổi trả</a><br>
+                                                </div>
+                                    </ul>
+                                
+                                </li>
+                                <li class="mnsm"><a href="#" ><i class="fas fa-heartbeat"></i> Làm đẹp-Sức khỏe </a>
+                                        <ul class="small">
+                                            <div class="container containerdm">
+                                                <div class="row danhmuc">
+                                                    <div class="col-sm-4">
+                                                        <a href="#"><b>Ưu đãi trong tháng</b></a><br>
+                                                        <a href="#">Best Seller-Hot không ngờ</a> <br>
+                                                        <a href="#">New Arrival-Gía dùng thử cực sốc</a><br>
+                                                        <a href="#">ƯU ĐÃI MỖI NGÀY</a><br>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <a href="#"><b>Trang điểm</b></a> <br>
+                                                        <a href="#">Trang điểm mặt</a><br>
+                                                        <a href="#">Trang điểm mắt</a> <br>
+                                                        <a href="#">Trang điểm môi</a><br>
+                                                        <a href="#">Dụng cụ trang điểm</a><br>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <a href=""><b>Thiết bị chăm sóc sức khỏe</b></a><br>
+                                                        <a href="">Dụng cụ theo dõi sức khỏe</a><br>
+                                                        <a href="">Máy massage</a><br>
+                                                        <a href="">Thiết bị y tế</a><br>
+                                                        <a href="">Máy chăm sóc da</a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row danhmuc" >
+                                                    <div class="col-sm-4 ">
+                                                        <a href="#"><b>Chăm sóc cơ thể</b></a><br>
+                                                        <a href="#">Sữa tắm</a><br>
+                                                        <a href="#">Dưỡng thể</a> <br>
+                                                        <a href="#">Khử mùi</a><br>
+                                                    </div>
+        
+                                                    <div class="col-sm-4">
+                                                        <a href="#"><b>Chăm sóc da mặt</b></a><br>
+                                                        <a href="#">Sữa rửa mặt</a><br>
+                                                        <a href="#">Nước hoa hồng</a> <br>
+                                                        <a href="#">Serum và kem dưỡng</a><br>
+                                                        <a href="#">Dưỡng ẩm</a><br>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <a href="#"><b>Chăm sóc tóc</b></a><br>
+                                                        <a href="#">Dầu gội-dầu xả</a><br>
+                                                        <a href="#">Dưỡng tóc- ủ tóc</a> <br>
+                                                    </div>
+                                        </ul>
+                                </li>
+                                <li class="mnsm"><a href="#" ><i class='fas fa-puzzle-piece'></i> Đồ chơi,Mẹ và bé</a>
+                                    <ul class="small">
+                                        <div class="container containerdm">
+                                            <div class="row danhmuc">
+                                                <div class="col-sm-4">
+                                                    <a href="#"><b>Tả-bỉm</b></a><br>
+                                                    <a href="#">Tả dán</a> <br>
+                                                    <a href="#">Tả quần</a><br>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <a href="#"><b>Sữa-Thực phẩm ăn dặm</b></a> <br>
+                                                    <a href="#">Thực phẩm ăn dặm cho bé</a><br>
+                                                    <a href="#">Sữa cho bé dưới 24 tháng tuổi</a> <br>
+                                                    <a href="#">Sữa cho bé trên 24 tháng tuổi</a><br>
+                                                    <a href="#">Sữa cho bà mẹ mang thai và sau sinh</a><br>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <a href=""><b>Khuyến mãi trong tháng</b></a><br>
+                                                    <a href="">Mẹ săn khuyến mãi</a><br>
+                                                    <a href="">Siêu thị tả bỉm</a><br>
+                                                    <a href="">Bí quyết chăm sóc nhà sạch</a><br>
+                                                    <a href="">Đồ chơi & thời trang cho bé</a>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row danhmuc" >
+                                                <div class="col-sm-4 ">
+                                                    <a href="#"><b>Đồ chơi</b></a><br>
+                                                    <a href="#">Lắp ghép, xếp hình</a><br>
+                                                    <a href="#">Đồ chơi giáo dục</a> <br>
+                                                    <a href="#">Đồ chơi mô hình</a><br>
+                                                </div>
+    
+                                                <div class="col-sm-4">
+                                                    <a href="#"><b>Thời trang, phụ kiện cho bé</b></a><br>
+                                                    <a href="#">Thời trai sơ sinh</a><br>
+                                                    <a href="#">Thời trang bé gái</a> <br>
+                                                    <a href="#">Thời trang bé trai</a><br>
+                                                    <a href="#">Giày dép</a><br>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <a href="#"><b>Đồ dùng cho mẹ</b></a><br>
+                                                    <a href="#">Phụ kiện, trang phục</a><br>
+                                                    <a href="#">Thời trang bà bầu</a> <br>
+                                                </div>
+                                    </ul>
+                                </li>
+                                <li><a href="#" ><i class='fas fa-hamburger'></i> Hàng tiêu dùng, thực phẩm </a></li>
+                                <li><a href="#" ><i class='fas fa-blender'></i> Điện tử-Điện lạnh</a></li>
+                                <li><a href="#" ><i class="fas fa-tshirt"></i> Thời trang, phụ kiện</a></li>
+                                <li><a href="#" ><i class="fas fa-tv"></i> Điện gia dụng</a></li>
+                                <li><a href="#" ><i class="fas fa-hiking"></i> Thể thao, dã ngoại</a></li>
+                                <li><a href="#" ><i class="fas fa-baby-carriage"></i> Nhà cửa đời sống</a></li>
+                                <li><a href="#" ><i class="fas fa-school"></i> Sale page</a></li>
+                             </ul>
+                        </li>
+                    </div>
+                    
+                        <div class="col-sm-2" style="margin: 10px;">
+                            <i class="fas fa-sun" style="color: red;"></i>
+                            <a href="" style="color: black; text-decoration: none;">Sản phẩm chính hãng</a>
+                        </div>
+                        <div class="col-sm-3" style="margin: 10px;">
+                            <i class="fas fa-bullhorn" style="color: blue;"></i>
+                            <a href="" style="color: black; text-decoration: none;">Kiểm tra khi nhận hàng</a>
+                        </div>
+                        <div class="col-sm-3" style="margin: 10px;">
+                            <i class="fas fa-heart" style="color: red;"></i>
+                            <a href="" style="color: black; text-decoration: none;">Hoàn tiền 111% nếu hàng giả</a>
+                        </div>
+                
+                    
+                </div>
+            </div> 
+            <div class="container">
+
+                <div class="row">
+                    <div id="slideshow">
+                        <div class="slide-wrapper">
+                          <div class="slide"><img src="./image/do-gia-dung-can-thiet.jpg"></div>
+                          <div class="slide"><img src="./image/4_do-gia-dung-can-thiet.jpg" style="height: 510px;"></div>
+                          <div class="slide"><img src="./image/thiet-ke-shop-quan-ao.jpg" style="height: 510px;"></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="row" style="margin: 10px;">
+                    <div class="col-sm-3"><a href=""><img src="./image/brand_1.webp" alt=""></a></div>
+                    <div class="col-sm-3"><a href=""><img src="./image/brand_1.webp" alt=""></a></div>
+                    <div class="col-sm-3"><a href=""><img src="./image/brand_3.webp" alt=""></a></div>
+                    <div class="col-sm-3"><a href=""><img src="./image/brand_3.webp" alt=""></a></div>
+
+                </div>
+                <div class="row" >
+                    <div class="col-sm-3"><h3>GIÁ SỐC HÔM NAY</h3> </div>
+                    <div class="col-sm-4" style="margin: 20px;">Kết thúc sau</div>
+                </div>
+
+                <div class="row">
+                        <div class="col-sm-2" style="margin:10px">
+                            <div class="containerimage">
+                                <img src="./image/imlap.jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                  <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                  <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                                </div>
+
+                                <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                                <b class="money">24.990.00đ</b>
+                                <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                                Còn lại <b>101</b> sản phẩm
+                            </div><br>
+                        </div> 
+                        
+                        <div class="col-sm-2" style="margin: 10px;">
+                            <div class="containerimage">
+                                <img src="./image/dell2.webp" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                    <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                                </div>
+
+                                <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                                <b class="money">24.990.00đ</b>
+                                <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                                Còn lại <b>101</b> sản phẩm
+                            </div><br>
+                        </div>
+
+                        <div class="col-sm-2" style="margin: 10px;">
+                            <div class="containerimage">
+                                <img src="./image/phones.webp" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                    <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                                </div>
+
+                                <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                                <b class="money">24.990.00đ</b>
+                                <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                                Còn lại <b>101</b> sản phẩm
+                            </div><br>
+                        </div>
+
+                        <div class="col-sm-2" style="margin: 10px;">
+                            <div class="containerimage">
+                                <img src="./image/vsmart-joy-3-den.webp" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                    <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                                </div>
+
+                                <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                                <b class="money">24.990.00đ</b>
+                                <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                                Còn lại <b>101</b> sản phẩm
+                            </div><br>
+                        </div>
+
+                        <div class="col-sm-2" style="margin: 10px;">
+                            <div class="containerimage">
+                                <img src="./image/ip-xr-cam.webp" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                    <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                                </div>
+
+                                <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                                <b class="money">24.990.00đ</b>
+                                <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                                Còn lại <b>101</b> sản phẩm
+                            </div><br>
+                        </div>
+                       
+                    
+                </div>
+                <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-6 xem2">
+                        <a href=""><h class="xem">Xem tất cả <i class="fas fa-chevron-right float-right"data-toggle-submenu=""></i></h></a>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <img src="./image/section_hot_banner.webp" alt="">
+                </div>
+                
+                <div class="row">
+                    <h3><b>DEAL CHỚP NHOÁNG</b></h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2" style="margin: 35px;">
+                        <div class="containerimage">
+                            <img src="./image/imlap.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                              <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                            </div>
+
+                            <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                            <b class="money">24.990.00đ</b>
+                            <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                            Còn lại <b>101</b> sản phẩm
+                        </div>
+                    </div>
+                    <div class="col-sm-2" style="margin:35px ;">
+                        <div class="containerimage">
+                            <img src="./image/dell2.webp" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                            </div>
+
+                            <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                            <b class="money">24.990.00đ</b>
+                            <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                            Còn lại <b>101</b> sản phẩm
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-2" style="margin:35px;">
+                        <div class="containerimage">
+                            <img src="./image/vsmart-joy-3-den.webp" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                            </div>
+
+                            <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                            <b class="money">24.990.00đ</b>
+                            <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                            Còn lại <b>101</b> sản phẩm
+                        </div><br>
+                    </div>
+
+                    <div class="col-sm-2" style="margin:35px;">
+                        <div class="containerimage">
+                            <img src="./image/ip-xr-cam.webp" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                            </div>
+
+                            <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                            <b class="money">24.990.00đ</b>
+                            <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                            Còn lại <b>101</b> sản phẩm
+                        </div><br>
+                    </div>
+                    
+                </div>
+                <div class="row"><h3><b>ĐIỆN THOẠI NỔI BẬT</b></h3></div>
+                <div class="row">
+                    <div class="col-sm-5"><img src="./image/section_pro_banner.webp" alt=""></div>
+                    <div class="col-sm-2"><div class="containerimage">
+                        <img src="./image/vsmart-joy-3-den.webp" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                            <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                        </div>
+
+                        <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                        <b class="money">24.990.00đ</b>
+                        <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                        Còn lại <b>101</b> sản phẩm
+                    </div></div>
+                    <div class="col-sm-2">
+                        <div class="containerimage">
+                            <img src="./image/vsmart-joy-3-den.webp" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                            </div>
+
+                            <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                            <b class="money">24.990.00đ</b>
+                            <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                            Còn lại <b>101</b> sản phẩm
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="containerimage">
+                            <img src="./image/vsmart-joy-3-den.webp" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                            </div>
+
+                            <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                            <b class="money">24.990.00đ</b>
+                            <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                            Còn lại <b>101</b> sản phẩm
+                        </div>
+                    </div>
+                </div> 
+                <br> <br> <br>
+                <div class="row"><h3><b>LAPTOP BÁN CHẠY</b></h3></div>
+                <div class="row">
+
+                    <div class="col-sm-5"><img src="./image/section_hot.webp" alt=""></div>
+                    <div class="col-sm-2"><div class="containerimage">
+                        <img src="./image/imlap.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                            <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                        </div>
+
+                        <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                        <b class="money">24.990.00đ</b>
+                        <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                        Còn lại <b>101</b> sản phẩm
+                    </div></div>
+                    <div class="col-sm-2">
+                        <div class="containerimage">
+                            <img src="./image/dell2.webp" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                            </div>
+
+                            <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                            <b class="money">24.990.00đ</b>
+                            <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                            Còn lại <b>101</b> sản phẩm
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="containerimage">
+                            <img src="./image/imlap.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text1"><a href="" title="Xem nhanh"><i class="far fa-eye" style="color: orangered;"></i></a></div>
+                                <div class="text2"><a href="" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus" style="color: orangered;"></i></a></div>
+                            </div>
+
+                            <p>Laptop ASUS ZenBook Flip 13 UX362FA-EL205T</p>
+                            <b class="money">24.990.00đ</b>
+                            <p class="Fsale">SẢN PHẢM FLASH SALE</p>
+                            Còn lại <b>101</b> sản phẩm
+                        </div>
+                    </div>
+                </div>
+            </div>     
+                
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-4"><h3><b>Đăng ký nhận tin</b></h3></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input class="email"type="text" class="control" placeholder="Nhập địa chỉ email">
+                            <span class="input-group-addon"><button class="submit" >Đăng ký</button></span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <b>Về chúng tôi</b> <br>
+                        <img class="shop" src="./image/shop.webp" alt="">
+                        <p>Cung cấp sản phẩm chất lượng từ các thương hiệu hàng đầu thế giới.</p>
+                        <p><i class="fas fa-map-marker-alt" style="color:orangered;"></i> Địa chỉ: 101B Lê Hữu Trác</p>
+                        <p><i class="glyphicon glyphicon-earphone" style="color:orangered"></i> Số điện thoại:<a href="">19006750</a></p>
+                        <p><i class="glyphicon glyphicon-envelope" style="color: orangered;"></i> Email:<a href="">khkfhkf@gmail.com</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <b>Chính sách</b> <br>
+                        <a href="">Quy trình vận chuyển</a><br>
+                        <a href="">Chính sách đổi trả</a><br>
+                        <a href="">Hướng dẫn trả góp</a><br>
+                        <a href="">Chính sách bảo hành</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <b>Hỗ trợ khách hàng</b><br>
+                        <a href="">Quy trình vận chuyển</a><br>
+                        <a href="">Chính sách đổi trả</a><br>
+                        <a href="">Hướng dẫn trả góp</a><br>
+                        <a href="">Chính sách bảo hành</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <b>Theo dõi chúng tôi</b> <br>
+                        
+                        <a href="">
+                            <div class="iconfooter">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-behance"></i>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            
+                        </a>
+                        
+                        </div>
+                        <b>Phương thức thanh toán</b> <br>
+                        <a href=""><img style="width: 200px;"src="" alt=""></a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    
+    </div>
+
+
+      
+    
+</body>
+</html>
